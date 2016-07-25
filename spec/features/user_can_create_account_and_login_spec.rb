@@ -30,7 +30,7 @@ RSpec.feature "user can create account and login"  do
     fill_in "Password Confirmation", with: "password1"
     click_on "Create Account"
 
-    expect(current_path).to eq root_path
+    expect(current_path).to eq signup_path
   end
 
   it "will not allow you to create account if email already exists" do
@@ -48,6 +48,6 @@ RSpec.feature "user can create account and login"  do
     fill_in "Password Confirmation", with: "password1"
     click_on "Create Account"
 
-    expect(current_path).to eq root_path
+    expect(current_path).to eq signup_path
   end
 end
