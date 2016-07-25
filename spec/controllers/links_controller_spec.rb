@@ -30,15 +30,16 @@ RSpec.describe Api::V1::LinksController do
     end
   end
 
-  # describe "Updates link" do
-  #   it "updates a single link" do
-  #     get :update, format: :json, id: @link.id
-  #     links_hash = JSON.parse(response.body, symbolize_names: true)
-  #
-  #     expect(response).to have_http_status(:success)
-  #     expect(links_hash.first[:title]).to eq("Awesome link")
-  #     expect(links_hash.first[:url]).to eq("www.spacejam.com")
-  #   end
-  # end
+  describe "Updates link" do
+    it "updates a single link" do
+      get :update, format: :json, id: @link.id, post: {title: "Nifty link yo", url: "www.gmail.com"}
+      links_hash = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to have_http_status(:success)
+      binding.pry
+      expect(links_hash[:title]).to eq("Nifty link yo")
+      expect(links_hash[:url]).to eq("www.gmail.com")
+    end
+  end
 
 end

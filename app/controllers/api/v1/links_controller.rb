@@ -10,9 +10,12 @@ class Api::V1::LinksController < ApplicationController
   end
 
   def update
+    link = Link.find(params['id'])
     if link.update(link_params)
       link.save
-      render json: {response: "successful"}
+      binding.pry
+      #TODO doesnt know about unready
+      render json: {response: "successful", title: "#{link.title}", url: "#{link.url}"
     else
       render json: {response: "failed"}
     end
