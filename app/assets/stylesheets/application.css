@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+.unread-box {
+  border-style: dashed;
+  color: red;
+}
+
+.read-box {
+  border-style: dotted;
+  color: grey;
+
+}
