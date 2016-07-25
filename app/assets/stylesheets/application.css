@@ -22,5 +22,8 @@
 .read-box {
   border-style: dotted;
   color: grey;
+}
 
+.read-check {
+  color: green;
 }
