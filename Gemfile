@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'activevalidators', '~> 3.0.0'
 gem 'responders', '~> 2.2'
 gem 'rails', '4.2.6'
 gem 'pg', '~> 0.15'
