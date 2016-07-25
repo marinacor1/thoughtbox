@@ -1,11 +1,14 @@
 function updateReadStatus(selector){
-  $('#link-table').click(function(){
+  var unreadBox = document.getElementById('unread-check')
+  unreadBox.addEventListener("click", function(){
+    // not working
     target = this.innerHTML.split('div')[2].split(" ")[2][0];
     updateStatus(this, {id: target, unread: false});
   });
 
-
-  $('#link-table').click(function(){
+  var readBox = document.getElementById('read-check')
+  readBox.addEventListener("click", function(){
+// not working
     updateStatus(this, {unread: true});
   });
 

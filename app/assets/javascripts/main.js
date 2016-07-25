@@ -3,4 +3,5 @@ $(document).ready(function(){
   updateReadStatus('#link-table');
   loadForm('#link-form');
   postNewLink('#link-table');
+  editLink();
 });
