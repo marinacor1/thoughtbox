@@ -22,10 +22,10 @@ function load(selector){
 
   function formatUnread(link){
     if (link.unread){
-    return '<div id="read-check">' +'<ul> Mark as Read: <input type="checkbox" class="checkbox-unread"></ul></div>';
+    return '<div class="read-check">' +'<ul> Mark as Read: <input type="checkbox" class="checkbox-unread"></ul></div>';
   }
     else {
-    return '<div id="unread-check">' + '<ul>Mark as Unread: <input type="checkbox" class="checkbox-read"></ul>';
+    return '<div class="unread-check">' + '<ul>Mark as Unread: <input type="checkbox" class="checkbox-read"></ul>';
   }
   }
 }
