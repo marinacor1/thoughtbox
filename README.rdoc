@@ -25,18 +25,17 @@ It also has an internal API
 ###On Your Own
 To download the project and set it up locally, run the following commands:
 
-```
+
 $ git clone git@github.com:marinacor1/thoughtbox.git
-```
 
-```
+
+
 $ bundle
-```
 
-```
+
+
 $ rake db:create db:migrate
-```
 
-```
+
+
 $ rails s
-```
