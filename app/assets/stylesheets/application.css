@@ -27,3 +27,74 @@
 .read-check {
   color: green;
 }
+
+#link-subset {
+  border-style: dotted;
+}
+
+#link-form {
+  padding-top: 30px;
+  margin: 20px;
+  font-family: arial;
+
+}
+
+#index-page{
+  background-color:#21bedd;
+}
+
+header {
+  font-family: arial;
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  border-radius: 25px;
+  background-color: green;
+  size: 200%;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+h1 {
+  font-family: arial;
+}
+
+article {
+  font-family: arial;
+  font-size: 200%;
+  padding-top: 120px;
+}
+
+.login-text {
+  opacity: 0.8;
+  background-color: #dcdcdc;
+  font-family: monospace;
+  width: 50%;
+  font-size: 120%;
+  padding: 0px 0px 0px 0px;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.sign-text {
+  opacity: 0.8;
+  background-color: #dcdcdc;
+  font-family: monospace;
+  width: 50%;
+  font-size: 120%;
+  padding: 0px 0px 0px 0px;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 2px;
+  padding-left: 20px;
+}
+
+.landing-page {
+}
+
+.login-page {
+
+}

@@ -1,11 +1,13 @@
-<h1>Create an Account</h1>
+<center><h1>Create an Account</h1></center>
 
-<%= form_for @user do |f| %>
-  <%= f.label :email, "Email:", class: "label-new" %>
-  <%=  f.text_field :email %>
-  <%= f.label :password, "Password:", class: "label-password" %>
-  <%=  f.text_field :password %>
-  <%= f.label :password_confirmation, "P Confirmation:", class: "label-pc-new" %>
-  <%=  f.text_field :password_confirmation %>
-  <%= f.submit "Create Account" %>
-<% end %>
+<center><div class="sign-text">
+  <%= form_for @user do |f| %>
+    <p><%= f.label :email, "Email:", class: "label-new" %>
+    <%=  f.text_field :email %></p>
+    <p><%= f.label :password, "Password:", class: "label-password" %>
+    <%=  f.text_field :password %></p>
+    <p><%= f.label :password_confirmation, "P Confirmation:", class: "label-pc-new" %>
+    <%=  f.text_field :password_confirmation %></p>
+    <p><%= f.submit "Create Account" %></p>
+  <% end %>
+</div></center>
