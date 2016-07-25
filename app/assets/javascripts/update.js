@@ -1,11 +1,11 @@
 function updateReadStatus(selector){
-  $('#link-table').click(function(){
+  $('.unread-check').click(function(){
     target = this.innerHTML.split('div')[2].split(" ")[2][0];
     updateStatus(this, {id: target, unread: false});
   });
 
 
-  $('#link-table').click(function(){
+  $('.read-check').click(function(){
     updateStatus(this, {unread: true});
   });
 
