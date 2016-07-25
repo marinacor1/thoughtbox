@@ -11,7 +11,7 @@ RSpec.feature "user can create account and login"  do
     expect(current_path).to eq signup_path
     fill_in "Email:", with: "email@email.com"
     fill_in "Password:", with: "password"
-    fill_in "Password Confirmation:", with: "password"
+    fill_in "P Confirmation:", with: "password"
     click_on "Create Account"
 
     expect(current_path).to eq links_path
@@ -27,7 +27,7 @@ RSpec.feature "user can create account and login"  do
     expect(current_path).to eq signup_path
     fill_in "Email:", with: "email@email.com"
     fill_in "Password", with: "password"
-    fill_in "Password Confirmation", with: "password1"
+    fill_in "P Confirmation", with: "password1"
     click_on "Create Account"
 
     expect(current_path).to eq signup_path
@@ -45,7 +45,7 @@ RSpec.feature "user can create account and login"  do
     expect(current_path).to eq signup_path
     fill_in "Email:", with: "myemail@email.com"
     fill_in "Password", with: "password"
-    fill_in "Password Confirmation", with: "password1"
+    fill_in "P Confirmation", with: "password1"
     click_on "Create Account"
 
     expect(current_path).to eq signup_path
