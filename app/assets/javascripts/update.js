@@ -1,5 +1,6 @@
 function updateReadStatus(selector){
   $('.unread-check').click(function(){
+    debugger
     target = this.innerHTML.split('div')[2].split(" ")[2][0];
     updateStatus(this, {id: target, unread: false});
   });
