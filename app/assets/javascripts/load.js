@@ -23,10 +23,10 @@ function load(selector){
     if (link.unread){
     target = document.getElementById('idea-table');
     // jQuery not working
-    return '<ul> Mark as Read: <input type="checkbox"></ul>';
+    return '<ul class="read-check"> Mark as Read: <input type="checkbox" class="checkbox-unread"></ul>';
   }
     else {
-    return '<ul>Mark as Read: <input type="checkbox"></ul>';
+    return '<ul class="unread-check">Mark as Unread: <input type="checkbox" class="checkbox-read"></ul>';
   }
   }
 }
