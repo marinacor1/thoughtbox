@@ -15,18 +15,17 @@ function load(selector){
   }
 
   function formatLink(link){
-    return '<div id="idea-table"><ul id="title-box">'+ link.title +
-    '</ul><ul id="url-box">' + link.url + '</ul>' + formatUnread(link)+ '</div>';
+    return '<div id="idea-table"><div id="idea-subset"' + link.id + '><ul id="title-box">'+ link.title +
+    '</ul><ul id="url-box">' + link.url + '</ul>' + formatUnread(link)+ '</div></div>';
 }
 
   function formatUnread(link){
     if (link.unread){
-      $(#idea-table).addClass('unread-box');
-      // call idea-table and add class
+    target = document.getElementById('idea-table');
+    // jQuery not working
     return '<ul> Mark as Read: <input type="checkbox"></ul>';
   }
     else {
-      $(#idea-table).addClass('read-box');
     return '<ul>Mark as Read: <input type="checkbox"></ul>';
   }
   }

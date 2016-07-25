@@ -15,9 +15,12 @@
  */
 
 .unread-box {
-
+  border-style: dashed;
+  color: red;
 }
 
 .read-box {
-  
+  border-style: dotted;
+  color: grey;
+
 }
