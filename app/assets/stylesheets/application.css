@@ -31,3 +31,28 @@
 #link-subset {
   border-style: dotted;
 }
+
+#link-form {
+  padding-top: 30px;
+  margin: 20px;
+  font-family: arial;
+
+}
+
+#index-page{
+  background-color:#21bedd;
+}
+
+header {
+  font-family: arial;
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  border-radius: 25px;
+  background-color: green;
+  size: 200%;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
