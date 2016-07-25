@@ -21,9 +21,12 @@ function load(selector){
 
   function formatUnread(link){
     if (link.unread){
-    return '<ul>Mark as Read: <input type="checkbox"></ul>';
+      $(#idea-table).addClass('unread-box');
+      // call idea-table and add class
+    return '<ul> Mark as Read: <input type="checkbox"></ul>';
   }
     else {
+      $(#idea-table).addClass('read-box');
     return '<ul>Mark as Read: <input type="checkbox"></ul>';
   }
   }
