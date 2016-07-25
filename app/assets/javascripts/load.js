@@ -21,8 +21,6 @@ function load(selector){
 
   function formatUnread(link){
     if (link.unread){
-    target = document.getElementById('link-table');
-    // jQuery not working
     return '<ul class="read-check"> Mark as Read: <input type="checkbox" class="checkbox-unread"></ul>';
   }
     else {
