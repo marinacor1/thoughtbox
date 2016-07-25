@@ -27,3 +27,7 @@
 .read-check {
   color: green;
 }
+
+#link-subset {
+  border-style: dotted;
+}

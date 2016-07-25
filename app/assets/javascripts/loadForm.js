@@ -1,6 +1,5 @@
 function loadForm(selector){
-  var $formTarget = $(selector)
-  $formTarget.append(formatForm());
+  $(selector).append(formatForm());
 }
 
  function formatForm(){
