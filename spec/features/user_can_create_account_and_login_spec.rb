@@ -37,7 +37,7 @@ RSpec.feature "user can create account and login"  do
     user = User.create(email: "myemail@email.com", password: "password", password_confirmation: "password")
 
     visit root_path
-    
+
     expect(page).to have_content "Login or Sign Up"
 
     click_on "Sign Up"
