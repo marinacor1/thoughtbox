@@ -6,6 +6,7 @@ class Api::V1::LinksController < ApplicationController
   end
 
   def create
+    binding.pry
     respond_with Link.create(link_params)
   end
 
