@@ -7,5 +7,11 @@ Rails.application.routes.draw do
   get    "/signup",                to: "users#new"
 
   resources :users
-  resources :links, only: [:index]
+  resources :links
+
+  namespace :api, defaults: {format: :json} do
+    namespace :v1 do
+      resources :links
+    end
+  end
 end
