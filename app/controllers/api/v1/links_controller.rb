@@ -13,9 +13,7 @@ class Api::V1::LinksController < ApplicationController
     link = Link.find(params['id'])
     if link.update(link_params)
       link.save
-      binding.pry
-      #TODO doesnt know about unready
-      render json: {response: "successful", title: "#{link.title}", url: "#{link.url}"
+      render json: {response: "successful", title: "#{link.title}", url: "#{link.url}", unread: "#{link.unread}"}
     else
       render json: {response: "failed"}
     end
@@ -28,6 +26,6 @@ class Api::V1::LinksController < ApplicationController
   private
 
   def link_params
-    params.permit(:title, :url, :unread)
+    params.require(:post).permit(:title, :url, :unread)
   end
 end

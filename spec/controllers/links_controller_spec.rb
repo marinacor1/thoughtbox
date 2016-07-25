@@ -36,7 +36,7 @@ RSpec.describe Api::V1::LinksController do
       links_hash = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(:success)
-      binding.pry
+
       expect(links_hash[:title]).to eq("Nifty link yo")
       expect(links_hash[:url]).to eq("www.gmail.com")
     end
