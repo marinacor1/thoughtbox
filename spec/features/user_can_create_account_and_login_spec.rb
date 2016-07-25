@@ -9,7 +9,6 @@ RSpec.feature "user can create account and login"  do
     click_on "Sign Up"
 
     expect(current_path).to eq signup_path
-    save_and_open_page
     fill_in "Email:", with: "email@email.com"
     fill_in "Password:", with: "password"
     fill_in "Password Confirmation:", with: "password"
