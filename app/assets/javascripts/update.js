@@ -1,11 +1,11 @@
 function updateReadStatus(selector){
-  $('#idea-table').click(function(){
+  $('#link-table').click(function(){
     target = this.innerHTML.split('div')[2].split(" ")[2][0];
     updateStatus(this, {id: target, unread: false});
   });
 
 
-  $('#idea-table').click(function(){
+  $('#link-table').click(function(){
     updateStatus(this, {unread: true});
   });
 
@@ -19,7 +19,7 @@ function updateReadStatus(selector){
       },
       dataType: "json",
       success: function(){
-        load('#idea-table');
+        load('#link-table');
       }
     });
   }

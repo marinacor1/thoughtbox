@@ -1,4 +1,5 @@
 $(document).ready(function(){
-  load('#idea-table');
-  updateReadStatus('#idea-table');
+  load('#link-table');
+  updateReadStatus('#link-table');
+  loadForm('#link-form');
 });
