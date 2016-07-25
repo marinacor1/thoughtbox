@@ -5,6 +5,10 @@ class Api::V1::LinksController < ApplicationController
     respond_with Link.all
   end
 
+  def show
+    respond_with Link.find(params[:id])
+  end
+
   def create
     binding.pry
     respond_with Link.create(link_params)
