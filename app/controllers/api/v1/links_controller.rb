@@ -15,7 +15,6 @@ class Api::V1::LinksController < ApplicationController
   end
 
   def update
-    binding.pry
     link = Link.find(params['id'])
     if link.update(link_params)
       link.save

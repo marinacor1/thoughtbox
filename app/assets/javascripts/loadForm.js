@@ -9,5 +9,5 @@ function loadForm(selector){
         'Url: <br>' + '<input type="text" name="link-url" id="link-url"><br>' +
         '' +
         '</form>' +
-        '</div>'
+        '</div>';
 }

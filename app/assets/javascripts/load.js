@@ -16,7 +16,7 @@ function load(selector){
 
   function formatLink(link){
     return '<div id="link-table"><div id="link-subset"' + link.id + '><ul id="title-box">'+ link.title +
-    '</ul><ul id="url-box">' + link.url + '</ul>' + formatUnread(link)+ '<button type="button" onclick="editLink()" class="edit-button">Edit</button>' +
+    '</ul><ul id="url-box">' + link.url + '</ul>' + formatUnread(link) + '<button type="button" onclick="editLink()" class="edit-button">Edit</button>' +
     '</div></div>';
 }
 
