@@ -16,7 +16,15 @@ function load(selector){
 
   function formatLink(link){
     return '<div id="idea-table"><ul id="title-box">'+ link.title +
-    '</ul><ul id="url-box">' + link.url + '</ul><ul id="read-box">' +
-    link.unread + '</ul></div>';
+    '</ul><ul id="url-box">' + link.url + '</ul>' + formatUnread(link)+ '</div>';
 }
+
+  function formatUnread(link){
+    if (link.unread){
+    return '<ul>Mark as Read: <input type="checkbox"></ul>';
+  }
+    else {
+    return '<ul>Mark as Read: <input type="checkbox"></ul>';
+  }
+  }
 }
