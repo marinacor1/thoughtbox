@@ -19,9 +19,6 @@ class Api::V1::LinksController < ApplicationController
     end
   end
 
-  def destroy
-    respond_with Link.destroy(params[:id])
-  end
 
   private
 
