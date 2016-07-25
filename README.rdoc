@@ -1,28 +1,39 @@
-== README
+####Thoughtbox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Thoughtbox* allows you to compile all of your favorite links, ensuring that they are valid links.
+Functionality:
+-You can see all links
+-You can add new urls
+-It checks to make sure that you filled everything out and that the url is valid
+-You will see a new url without refreshing the page
+-See JSON of all links through the internal API
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+[LIVE ON HEROKU] (https://whispering-scrubland-67273.herokuapp.com)
+
+## Details about the Application
+
+This application uses the following tools:
+
+*Languages/ Frameworks:* RAILS 4.0, Ruby, Javascript, AJAX, JQuery, HTML, and CSS.
+
+It also has an internal API
+
+*Testing:* RSpec
+
+
+###On Your Own
+To download the project and set it up locally, run the following commands:
+
+```
+$ git clone git@github.com:marinacor1/thoughtbox.git
+```
+```
+$ bundle
+```
+```
+$ rake db:create db:migrate
+```
+```
+$ rails s
+```
