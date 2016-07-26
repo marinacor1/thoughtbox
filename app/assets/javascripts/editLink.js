@@ -20,7 +20,7 @@ function updateData(currentId){
     type: "PATCH",
     url: "api/v1/links/" + currentId,
     data: newData,
-    datType: 'json',
+    dataType: 'json',
     success: noReloadLink(currentId)
   });
 }

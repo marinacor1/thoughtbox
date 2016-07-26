@@ -17,7 +17,6 @@ class Api::V1::LinksController < ApplicationController
   def update
     link = Link.find(params['id'])
     if link.update(link_params)
-      binding.pry
       link.save
       render json: {response: "successful", title: "#{link.title}", url: "#{link.url}", unread: "#{link.unread}"}
     else
