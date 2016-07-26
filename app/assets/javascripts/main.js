@@ -5,4 +5,5 @@ $(document).ready(function(){
   updateReadStatus('#link-table');
   editLink('#link-table');
   searchLinks('#searchbox');
+  sortAlphabetically('#link-table');
 });
