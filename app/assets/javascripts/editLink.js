@@ -12,7 +12,7 @@ function editLink(selector){
 }
 
 function updateData(currentId){
-  console.log("current id is " + currentId);
+  console.log('update data called');
   var newTitle = $('.new-title').val();
   var newUrl = $('.new-url').val();
   var newData = {title: newTitle, url: newUrl};
@@ -28,7 +28,7 @@ function updateData(currentId){
 }
 
 function noReloadLink(currentId, response){
-  $('#link-subset').append(formatLink(response));
+  $('#link-subset' + currentId).replaceWith(formatLink(response));
 }
 
   function formatLink(response){
