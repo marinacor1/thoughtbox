@@ -4,4 +4,5 @@ $(document).ready(function(){
   postNewLink('#link-table');
   updateReadStatus('#link-table');
   editLink('#link-table');
+  searchLinks('#searchbox');
 });
