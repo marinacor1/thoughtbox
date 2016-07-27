@@ -1,0 +1,202 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'phantomjs' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.4
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'phantomjs', null ]
+7 verbose cache add spec phantomjs
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'phantomjs',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'phantomjs',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed phantomjs@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for phantomjs
+11 info addNameTag [ 'phantomjs', 'latest' ]
+12 silly mapToRegistry name phantomjs
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'phantomjs',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'phantomjs',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/phantomjs
+17 verbose addNameTag registry:https://registry.npmjs.org/phantomjs not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/phantomjs
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 10:18:44 AM
+21 verbose request id 10ab3e0d49507714
+22 verbose etag "5WY43RX331V29PNOVUSCM97KJ"
+23 http request GET https://registry.npmjs.org/phantomjs
+24 http 200 https://registry.npmjs.org/phantomjs
+25 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 verbose headers   etag: '"5XTOUJ1ABRXRH6K890XGJBLJ9"',
+25 verbose headers   'content-type': 'application/json',
+25 verbose headers   'content-encoding': 'gzip',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   'content-length': '14841',
+25 verbose headers   'accept-ranges': 'bytes',
+25 verbose headers   date: 'Wed, 27 Jul 2016 16:18:44 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   age: '233',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-den6021-DEN',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '2',
+25 verbose headers   'x-timer': 'S1469636324.412330,VS0,VE0',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 200,
+26 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly get     etag: '"5XTOUJ1ABRXRH6K890XGJBLJ9"',
+26 silly get     'content-type': 'application/json',
+26 silly get     'content-encoding': 'gzip',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     'content-length': '14841',
+26 silly get     'accept-ranges': 'bytes',
+26 silly get     date: 'Wed, 27 Jul 2016 16:18:44 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     age: '233',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-den6021-DEN',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '2',
+26 silly get     'x-timer': 'S1469636324.412330,VS0,VE0',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose get saving phantomjs to /Users/marinacorona/.npm/registry.npmjs.org/phantomjs/.cache.json
+28 verbose correctMkdir /Users/marinacorona/.npm correctMkdir not in flight; initializing
+29 silly addNameTag next cb for phantomjs with tag latest
+30 silly addNamed phantomjs@2.1.7
+31 verbose addNamed "2.1.7" is a plain semver version for phantomjs
+32 warn deprecated phantomjs@2.1.7: Package renamed to phantomjs-prebuilt. Please update 'phantomjs' package references to 'phantomjs-prebuilt'
+33 silly mapToRegistry name phantomjs
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry data Result {
+36 silly mapToRegistry   raw: 'phantomjs',
+36 silly mapToRegistry   scope: null,
+36 silly mapToRegistry   name: 'phantomjs',
+36 silly mapToRegistry   rawSpec: '',
+36 silly mapToRegistry   spec: 'latest',
+36 silly mapToRegistry   type: 'tag' }
+37 silly mapToRegistry uri https://registry.npmjs.org/phantomjs
+38 verbose addRemoteTarball https://registry.npmjs.org/phantomjs/-/phantomjs-2.1.7.tgz not in flight; adding
+39 verbose addRemoteTarball [ 'https://registry.npmjs.org/phantomjs/-/phantomjs-2.1.7.tgz',
+39 verbose addRemoteTarball   'c6910f67935c37285b6114329fc2f27d5f3e3134' ]
+40 info retry fetch attempt 1 at 10:18:44 AM
+41 info attempt registry request try #1 at 10:18:44 AM
+42 http fetch GET https://registry.npmjs.org/phantomjs/-/phantomjs-2.1.7.tgz
+43 http fetch 200 https://registry.npmjs.org/phantomjs/-/phantomjs-2.1.7.tgz
+44 silly fetchAndShaCheck shasum c6910f67935c37285b6114329fc2f27d5f3e3134
+45 verbose addTmpTarball /var/folders/qx/dznxjnvj15qdtf1z2k0znkc00000gn/T/npm-4795-f082c1ce/registry.npmjs.org/phantomjs/-/phantomjs-2.1.7.tgz not in flight; adding
+46 verbose addTmpTarball already have metadata; skipping unpack for phantomjs@2.1.7
+47 verbose correctMkdir /Users/marinacorona/.npm correctMkdir not in flight; initializing
+48 silly cache afterAdd phantomjs@2.1.7
+49 verbose afterAdd /Users/marinacorona/.npm/phantomjs/2.1.7/package/package.json not in flight; writing
+50 verbose correctMkdir /Users/marinacorona/.npm correctMkdir not in flight; initializing
+51 verbose afterAdd /Users/marinacorona/.npm/phantomjs/2.1.7/package/package.json written
+52 silly install resolved [ { name: 'phantomjs',
+52 silly install resolved     version: '2.1.7',
+52 silly install resolved     keywords: [ 'phantomjs', 'headless', 'webkit' ],
+52 silly install resolved     description: 'Headless WebKit with JS API',
+52 silly install resolved     homepage: 'https://github.com/Medium/phantomjs',
+52 silly install resolved     repository: { type: 'git', url: 'git://github.com/Medium/phantomjs.git' },
+52 silly install resolved     license: 'Apache-2.0',
+52 silly install resolved     author:
+52 silly install resolved      { name: 'Dan Pupius',
+52 silly install resolved        email: 'dan@obvious.com',
+52 silly install resolved        url: 'http://pupius.co.uk' },
+52 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+52 silly install resolved     main: 'lib/phantomjs',
+52 silly install resolved     bin: { phantomjs: './bin/phantomjs' },
+52 silly install resolved     scripts:
+52 silly install resolved      { install: 'node install.js',
+52 silly install resolved        test: 'nodeunit --reporter=minimal test/tests.js && eslint install.js' },
+52 silly install resolved     dependencies:
+52 silly install resolved      { 'extract-zip': '~1.5.0',
+52 silly install resolved        'fs-extra': '~0.26.4',
+52 silly install resolved        hasha: '^2.2.0',
+52 silly install resolved        kew: '~0.7.0',
+52 silly install resolved        progress: '~1.1.8',
+52 silly install resolved        request: '~2.67.0',
+52 silly install resolved        'request-progress': '~2.0.1',
+52 silly install resolved        which: '~1.2.2' },
+52 silly install resolved     devDependencies: { eslint: '1.10.3', nodeunit: '0.9.1' },
+52 silly install resolved     gitHead: '21e7232131b60f2573e110cf89d156a33e8f293c',
+52 silly install resolved     bugs: { url: 'https://github.com/Medium/phantomjs/issues' },
+52 silly install resolved     _id: 'phantomjs@2.1.7',
+52 silly install resolved     _shasum: 'c6910f67935c37285b6114329fc2f27d5f3e3134',
+52 silly install resolved     _from: 'phantomjs@latest',
+52 silly install resolved     _npmVersion: '2.14.12',
+52 silly install resolved     _nodeVersion: '4.3.1',
+52 silly install resolved     _npmUser: { name: 'nicks', email: 'nicholas.j.santos@gmail.com' },
+52 silly install resolved     dist:
+52 silly install resolved      { shasum: 'c6910f67935c37285b6114329fc2f27d5f3e3134',
+52 silly install resolved        tarball: 'https://registry.npmjs.org/phantomjs/-/phantomjs-2.1.7.tgz' },
+52 silly install resolved     _npmOperationalInternal:
+52 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+52 silly install resolved        tmp: 'tmp/phantomjs-2.1.7.tgz_1460040810265_0.5564068194944412' },
+52 silly install resolved     deprecated: 'Package renamed to phantomjs-prebuilt. Please update \'phantomjs\' package references to \'phantomjs-prebuilt\'',
+52 silly install resolved     directories: {},
+52 silly install resolved     _resolved: 'https://registry.npmjs.org/phantomjs/-/phantomjs-2.1.7.tgz' } ]
+53 info install phantomjs@2.1.7 into /usr/local/lib
+54 info installOne phantomjs@2.1.7
+55 verbose installOne of phantomjs to /usr/local/lib not in flight; installing
+56 verbose correctMkdir /Users/marinacorona/.npm/_locks correctMkdir not in flight; initializing
+57 verbose lock using /Users/marinacorona/.npm/_locks/phantomjs-9e1b60a177ba69d8.lock for /usr/local/lib/node_modules/phantomjs
+58 silly install write writing phantomjs 2.1.7 to /usr/local/lib/node_modules/phantomjs
+59 verbose unbuild lib/node_modules/phantomjs
+60 silly gentlyRm /usr/local/lib/node_modules/phantomjs is being purged from base /usr/local
+61 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/phantomjs
+62 verbose tar unpack /Users/marinacorona/.npm/phantomjs/2.1.7/package.tgz
+63 verbose tar unpacking to /usr/local/lib/node_modules/phantomjs
+64 silly gentlyRm /usr/local/lib/node_modules/phantomjs is being purged
+65 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/phantomjs
+66 silly gunzTarPerm modes [ '755', '644' ]
+67 error tar.unpack untar error /Users/marinacorona/.npm/phantomjs/2.1.7/package.tgz
+68 verbose unlock done using /Users/marinacorona/.npm/_locks/phantomjs-9e1b60a177ba69d8.lock for /usr/local/lib/node_modules/phantomjs
+69 verbose fstream_path /usr/local/lib/node_modules/phantomjs
+70 verbose fstream_type Directory
+71 verbose fstream_class DirWriter
+72 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/phantomjs'
+72 verbose stack     at Error (native)
+73 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+73 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+73 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+74 verbose cwd /Users/marinacorona/Turing/4mod/thoughtbox
+75 error Darwin 15.5.0
+76 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "phantomjs"
+77 error node v4.4.4
+78 error npm  v2.15.1
+79 error path /usr/local/lib/node_modules/phantomjs
+80 error code EACCES
+81 error errno -13
+82 error syscall mkdir
+83 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/phantomjs'
+83 error     at Error (native)
+83 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/phantomjs']
+83 error   errno: -13,
+83 error   code: 'EACCES',
+83 error   syscall: 'mkdir',
+83 error   path: '/usr/local/lib/node_modules/phantomjs',
+83 error   fstream_type: 'Directory',
+83 error   fstream_path: '/usr/local/lib/node_modules/phantomjs',
+83 error   fstream_class: 'DirWriter',
+83 error   fstream_stack:
+83 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+83 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+83 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+84 error Please try running this command again as root/Administrator.
+85 verbose exit [ -13, true ]
+86 verbose unbuild lib/node_modules/phantomjs
+87 silly gentlyRm /usr/local/lib/node_modules/phantomjs is being purged from base /usr/local
+88 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/phantomjs
