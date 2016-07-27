@@ -18,6 +18,8 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails', '~> 3.5'
   gem 'capybara'
+  gem 'teaspoon'
+  gem 'teaspoon-mocha'
   gem 'launchy'
 end
 
