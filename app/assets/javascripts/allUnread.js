@@ -1,21 +1,14 @@
-function sortAlphabetically(selector){
+function allUnread(selector){
   $(selector).click(function(){
-  var $currentLinks = $('#link-table').children();
-  $.ajax({
-    type: "GET",
-    url: "api/v1/sorted",
-    success: renderLinks(selector)
+    var $currentLinks = $('#link-table').children();
+    $.each($currentLinks, function(index, link){
+      if (link.innerHTML.includes("unread-check") === false){
+        $(link).addClass('invisible');
+      }
+      else
+        $(link).removeClass('invisible');
+    })
   });
-  });
-}
-
-  function renderLinks(selector){
-    return function(response){
-      $('#link-table').empty();
-      $.each(response, function(index, link){
-        $('#link-table').append(formatLink(link));
-      });
-  };
 
   function formatLink(link){
     return '<div id="link-table"><div id="link-subset"' + link.id +'<ul id="title-box"' + link.id + '>'+ link.title +

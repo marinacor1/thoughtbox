@@ -24,6 +24,10 @@ class Api::V1::LinksController < ApplicationController
     end
   end
 
+  def sorted
+    respond_with Link.all.order(:title)
+  end
+
   private
 
   def link_params

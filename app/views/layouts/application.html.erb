@@ -8,9 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-<% if current_user %>
+<div class="logout"><% if current_user %>
 <%= login_logout %>
-<% end %>
+<% end %></div>
 <%= yield %>
 
 </body>

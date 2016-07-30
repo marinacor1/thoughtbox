@@ -28,19 +28,42 @@
   color: green;
 }
 
+#searchbox {
+  background-color: orange;
+  color: black;
+  border-style: solid;
+  padding-top: 20px;
+
+}
+
+.logout {
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
 #link-subset {
-  border-style: dotted;
+  opacity: 70%;
+  color: black;
+  background-color: white !important;
+  width: 550px !important;
+  border-style: solid;
+  border-width: thick;
 }
 
 #link-form {
-  padding-top: 30px;
+  padding-top: 0px;
   margin: 20px;
-  font-family: arial;
-
+  font-family: monospace;
+  width: 450px;
 }
 
 #index-page{
-  background-color:#21bedd;
+  width: 450px;
+}
+
+.whole-page{
+  background: url('crowd.jpeg') no-repeat center;
+  color: white;
 }
 
 header {
@@ -51,23 +74,34 @@ header {
 
 button {
   border-radius: 25px;
-  background-color: green;
-  size: 200%;
+  background-color: grey;
+  size: 400%;
   margin-bottom: 20px;
   margin-left: 40px;
+  color: white;
+  width: 190px;
+}
+
+body {
+  font-family: monospace;
+  font-size: 130%;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
-  font-family: arial;
+  font-family: monospace;
 }
 
 article {
+  background-color: yellow;
   font-family: arial;
   font-size: 200%;
   padding-top: 120px;
 }
 
 .login-text {
+  background-color: red;
   opacity: 0.8;
   background-color: #dcdcdc;
   font-family: monospace;
@@ -80,6 +114,7 @@ article {
 }
 
 .sign-text {
+  background-color: purple;
   opacity: 0.8;
   background-color: #dcdcdc;
   font-family: monospace;
@@ -94,4 +129,21 @@ article {
 
 .invisible {
   display: none;
+}
+
+#title-box {
+  padding-left: 36px;
+}
+
+#unread-check {
+  padding-left: 36px;
+}
+
+#read-check {
+  padding-left: 36px;
+}
+
+.unread-style {
+  color: pink;
+  background-color: yellow;
 }

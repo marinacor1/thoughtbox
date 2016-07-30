@@ -7,4 +7,6 @@ $(document).ready(function(){
   editLink('#link-table');
   searchLinks('#searchbox');
   sortAlphabetically('#alpha');
+  allRead('#by-read');
+  allUnread('#by-unread');
 });
