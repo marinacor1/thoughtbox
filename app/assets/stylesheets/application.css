@@ -28,6 +28,11 @@
   color: green;
 }
 
+.logout {
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
 #link-subset {
   opacity: 70%;
   color: black;
