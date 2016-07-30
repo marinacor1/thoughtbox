@@ -24,8 +24,7 @@ function load(selector){
   function checkStatusStyle(link){
     if (link.unread) {
       $(link).addClass('unread-style');
-  }
-
+    }
   }
 
   function formatUnread(link){

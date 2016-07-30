@@ -27,13 +27,12 @@ function postNewLink(selector){
     '</div></div>';
 }
 
-
   function formatUnread(link){
     if (link.unread){
-    return '<div id="read-check">' +'<ul> Mark as Read: <input type="checkbox" class="checkbox-unread"></ul></div>';
+      return '<div id="read-check">' +'<ul> Mark as Read: <input type="checkbox" class="checkbox-unread"></ul></div>';
   }
     else {
-    return '<div id="unread-check">' + '<ul>Mark as Unread: <input type="checkbox" class="checkbox-read"></ul>';
+      return '<div id="unread-check">' + '<ul>Mark as Unread: <input type="checkbox" class="checkbox-read"></ul>';
   }
   }
 }
