@@ -27,5 +27,6 @@ function load(selector){
     else {
     return '<div id="read-check">' + '<ul' + link.id + '>Mark as Unread: <input type="checkbox" class="checkbox-read"></ul>';
   }
-  }
+}
+
 }
