@@ -71,6 +71,8 @@ button {
 body {
   font-family: monospace;
   font-size: 130%;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
