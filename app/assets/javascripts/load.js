@@ -5,6 +5,7 @@ function load(selector){
     success: renderLinks(selector)
   });
 
+
   function renderLinks(selector){
     return function(response){
       var $target = $(selector);
@@ -27,5 +28,14 @@ function load(selector){
     else {
     return '<div id="read-check">' + '<ul' + link.id + '>Mark as Unread: <input type="checkbox" class="checkbox-read"></ul>';
   }
-  }
+}
+
+function searchForm(selector) {
+  var $target = $(selector);
+  $target.prepend(searchBox());
+}
+
+function searchBox(){
+  return 'Search Yo: <input id="searchbox" type="text" name="searchbox"><br><br>';
+}
 }
