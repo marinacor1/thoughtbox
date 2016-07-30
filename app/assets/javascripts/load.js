@@ -10,6 +10,7 @@ function load(selector){
       var $target = $(selector);
       $.each(response, function(index, link){
         $target.prepend(formatLink(link));
+        checkStatusStyle(link);
       });
     };
   }
@@ -19,6 +20,13 @@ function load(selector){
     '</ul><ul id="url-box" ' + link.id + '>' + link.url + '</ul>' + formatUnread(link) + '<button type="button" onclick="editLink()" class="edit-button">Edit</button>' +
     '</div></div>';
 }
+
+  function checkStatusStyle(link){
+    if (link.unread) {
+      $(link).addClass('unread-style');
+  }
+
+  }
 
   function formatUnread(link){
     if (link.unread){

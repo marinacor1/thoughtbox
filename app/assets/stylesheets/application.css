@@ -107,3 +107,8 @@ article {
 #read-check {
   padding-left: 36px;
 }
+
+.unread-style {
+  color: pink;
+  background-color: yellow;
+}
