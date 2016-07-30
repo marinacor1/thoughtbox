@@ -12,8 +12,8 @@ function sortAlphabetically(selector){
 }
 
   function renderLinks(selector, sorted){
-      $.each(sorted, function(index, link){
       $('#link-table').empty();
+      $.each(sorted, function(index, link){
         $('#link-table').append(formatLink(link));
       });
   }
