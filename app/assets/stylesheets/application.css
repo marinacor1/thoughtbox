@@ -28,6 +28,14 @@
   color: green;
 }
 
+#searchbox {
+  background-color: orange;
+  color: black;
+  border-style: solid;
+  padding-top: 20px;
+
+}
+
 .logout {
   padding-left: 40px;
   padding-top: 40px;
