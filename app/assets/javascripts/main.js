@@ -8,4 +8,5 @@ $(document).ready(function(){
   searchLinks('#searchbox');
   sortAlphabetically('#alpha');
   allRead('#by-read');
+  allUnread('#by-unread');
 });
