@@ -95,3 +95,15 @@ article {
 .invisible {
   display: none;
 }
+
+#title-box {
+  padding-left: 36px;
+}
+
+#unread-check {
+  padding-left: 36px;
+}
+
+#read-check {
+  padding-left: 36px;
+}
