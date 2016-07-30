@@ -3,10 +3,12 @@ function sortAlphabetically(selector){
   var $currentLinks = $('#link-table').children().sort();
   var sorted = [];
   var alphabetized = $currentLinks.each(function(index, individualLink){
+    // var title = individualLink.firstchild.firstChild.innerText
     var linkInfo = individualLink.textContent.split("http");
     linkInfo[1] = "http" + linkInfo[1];
     sorted.push({content: linkInfo, id: index});
   });
+  debugger
   renderLinks(selector, sorted.sort());
   });
 }
@@ -19,9 +21,9 @@ function sortAlphabetically(selector){
   }
 
   function formatLink(link){
-    return '<div id="link-table"><div id="link-subset"' + link.id + '><ul id="title-box"' + link.id + '>'+ link.content[0] +
-    '</ul><ul id="url-box" ' + link.id + '>' + link.content[1].split("")[0] + '</ul>' + formatUnread(link) + '<button type="button" onclick="editLink()" class="edit-button">Edit</button>' +
-    '</div></div>';
+    return '<div id="link-table"><ul id="title-box"' + link.id + '>'+ link.content[0] +
+    '</ul><ul id="url-box" ' + link.id + '>' + link.content[1].split(" ")[0] + '</ul>' + formatUnread(link) + '<button type="button" onclick="editLink()" class="edit-button">Edit</button>' +
+    '</div>';
 }
 
   function formatUnread(link){
