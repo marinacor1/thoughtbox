@@ -1,7 +1,9 @@
 function searchLinks(selector){
   $(selector).keyup(function(event){
-    debugger
-    var searchWords = $(this).val().toLowerCase();
+    var searchWords = event.key.toLowerCase();
+      if (searchWords == "backspace") {
+        searchWords = $(this).val();
+      }
     loadSelectWords(searchWords);
   });
 }
