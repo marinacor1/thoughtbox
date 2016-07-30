@@ -92,9 +92,6 @@ article {
   padding-left: 20px;
 }
 
-.landing-page {
-}
-
-.login-page {
-
+.invisible {
+  display: none;
 }

@@ -18,7 +18,14 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails', '~> 3.5'
   gem 'capybara'
+  gem 'teaspoon'
+  gem 'teaspoon-mocha'
   gem 'launchy'
+end
+
+group :test do
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
 end
 
 group :development do
