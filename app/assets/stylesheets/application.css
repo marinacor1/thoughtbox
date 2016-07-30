@@ -29,8 +29,9 @@
 }
 
 #link-subset {
-  opacity: 70%
-  background-color: white;
+  opacity: 70%;
+  color: black;
+  background-color: white !important;
   width: 550px !important;
   border-style: solid;
   border-width: thick;
