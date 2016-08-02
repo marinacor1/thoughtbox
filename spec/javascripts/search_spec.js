@@ -1,8 +1,8 @@
 //= require searchLinks
 //= require support/link_helpers
 
-describe('removeSpace', function () {
-  it('removes spaces from a string', function () {
+describe('searchLinks', function () {
+  it('removes mimatched links', function () {
     var links = createLinks();
     var link = createLink('New Link', 1);
     var link2 = createLink('zzz', 2);
