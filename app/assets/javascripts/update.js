@@ -1,12 +1,10 @@
 function updateReadStatus(selector){
   $(selector).delegate('#unread-check', 'click', function(event){
-    console.log("unread check was selected");
     var currentId = event.target.parentElement.outerHTML.split(" ")[0].split('<ul').pop().split(">")[0];
     updateStatus( {unread: false}, {id: currentId });
   });
 
   $(selector).delegate('#read-check', 'click', function(){
-    console.log("read check was selected");
     var currentId = event.target.parentElement.outerHTML.split(" ")[0].split('<ul').pop().split(">")[0];
     updateStatus( {unread: true}, {id: currentId});
   });
@@ -16,7 +14,7 @@ function updateReadStatus(selector){
 function updateStatus (newData, currentId) {
   $.ajax({
     type: "PATCH",
-    url: "api/v1/links/" + currentId.id,
+    url: "/api/v1/links/" + currentId.id,
     data: newData,
     dataType: 'json',
     success: clearTable('#link-table')
