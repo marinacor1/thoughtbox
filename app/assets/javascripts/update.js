@@ -1,12 +1,10 @@
 function updateReadStatus(selector){
   $(selector).delegate('#unread-check', 'click', function(event){
-    console.log("unread check was selected");
     var currentId = event.target.parentElement.outerHTML.split(" ")[0].split('<ul').pop().split(">")[0];
     updateStatus( {unread: false}, {id: currentId });
   });
 
   $(selector).delegate('#read-check', 'click', function(){
-    console.log("read check was selected");
     var currentId = event.target.parentElement.outerHTML.split(" ")[0].split('<ul').pop().split(">")[0];
     updateStatus( {unread: true}, {id: currentId});
   });

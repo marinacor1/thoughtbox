@@ -16,15 +16,14 @@ function load(selector){
   }
 
   function formatLink(link){
-    return '<div id="link-table"><div id="link-subset"' + link.id + '><ul id="title-box"' + link.id + '>'+ link.title +
-    '</ul><ul id="url-box" ' + link.id + '>' + link.url + '</ul>' + formatUnread(link) + '<button type="button" onclick="editLink()" class="edit-button">Edit</button>' +
+    return '<div id="link-table"><div id="link-subset-' + link.id + '"'+  '><ul id="title-box' + link.id + '">'+ link.title +
+    '</ul><ul id="url-box-' + link.id+ '">' + link.url + '</ul>' + formatUnread(link) + '<button type="button" onclick="editLink()" class="edit-button">Edit</button>' +
     '</div></div>';
 }
 
   function checkStatusStyle(link){
     if (link.unread) {
-      document.getElementById('link-subset').style.color = "orange";
-      $(link).addClass('unread-style');
+      document.getElementById('link-subset-' + link.id + '').style.color = "orange";
     }
   }
 

@@ -1,7 +1,7 @@
 function editLink(selector){
   $(selector).delegate('.edit-button', 'click', function(event){
-    var currentId = event.target.parentElement.outerHTML.split("=")[1].split(" ")[1];
-    $('#link-subset').append(newFormBox(currentId));
+    var currentId = event.target.parentElement.id.split("-")[2];
+    $('#link-subset-' + currentId + '').append(newFormBox(currentId));
   });
 
   function newFormBox(currentId){
@@ -12,7 +12,6 @@ function editLink(selector){
 }
 
 function updateData(currentId){
-  console.log('update data called');
   var newTitle = $('.new-title').val();
   var newUrl = $('.new-url').val();
   var newData = {title: newTitle, url: newUrl};
