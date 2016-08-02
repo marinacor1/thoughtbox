@@ -12,6 +12,7 @@ function editLink(selector){
 }
 
 function updateData(currentId){
+  console.log('current id is ' + currentId);
   var newTitle = $('.new-title').val();
   var newUrl = $('.new-url').val();
   var newData = {title: newTitle, url: newUrl};
@@ -27,13 +28,16 @@ function updateData(currentId){
 }
 
 function noReloadLink(currentId, response){
-  $('#link-subset' + currentId).replaceWith(formatLink(response));
+  $('#link-subset' + currentId + '').empty();
+  var upperId = currentId.toFixed() - 1;
+  $('#link-subset' + upperId + '').append(formatLink(response));
+  console.log('response is ' + response);
 }
 
   function formatLink(response){
-    return '<div id="link-table"><div id="link-subset">'+ response.id + '<ul id="title-box"'+ response.id + '>' + response.title +
-    '</ul><ul id="url-box" '+ response.id + '>' + response.url + '</ul>' + formatUnread(response) + '<button type="button" onclick="editLink()" class="edit-button">Edit</button>' +
-    '</div></div>';
+    return '<div id="link-subset>'+ response.id + '"'+'<ul id="title-box'+ response.id + '"'+'>' + response.title +
+    '</ul><ul id="url-box '+ response.id + '"'+'>' + response.url + '</ul>' + formatUnread(response) + '<button type="button" onclick="editLink()" class="edit-button">Edit</button>' +
+    '</div>';
 }
 
   function formatUnread(response){
