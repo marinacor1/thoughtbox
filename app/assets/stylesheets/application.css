@@ -137,8 +137,11 @@ article {
   padding-left: 36px;
 }
 
+
 #read-check {
   padding-left: 36px;
+  text-decoration: line-through;
+
 }
 
 .unread-style {

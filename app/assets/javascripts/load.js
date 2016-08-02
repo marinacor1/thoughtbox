@@ -29,6 +29,7 @@ function load(selector){
 
   function formatUnread(link){
     if (link.unread){
+      $('#link-subset'+ link.id).addClass('unread-style')
     return '<div id="unread-check">' +'<ul' + link.id + '> Mark as Read: <input type="checkbox" class="checkbox-unread"></ul></div>';
   }
     else {
