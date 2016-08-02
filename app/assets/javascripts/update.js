@@ -19,22 +19,26 @@ function updateStatus (newData, currentId) {
     url: "api/v1/links/" + currentId.id,
     data: newData,
     dataType: 'json',
-    success: noReloadStatus(newData, currentId),
+    success: clearTable('#link-table')
   });
 }
 
-function noReloadStatus(newData, currentId){
-  $(".checkbox").prop("checked", false);
-  $('#link-subset' + currentId.id).replaceWith(formatUnread(newData));
+function clearTable(selector){
+  $(selector).empty();
+  load(selector);
 }
-
-  function formatUnread(link){
-    if (link.unread){
-      console.log("link is now unread");
-      return '<div id="unread-check">' +'<ul> Mark as Read: <input type="checkbox" class="checkbox-unread"></ul></div>';
-  }
-    else {
-      console.log("link is now read");
-    return '<div id="read-check">' + '<ul>Mark as Unread: <input type="checkbox" class="checkbox-read"></ul>';
-  }
-  }
+// function noReloadStatus(newData, currentId){
+//   $(".checkbox").prop("checked", false);
+//   $('#link-subset' + currentId.id).replaceWith(formatUnread(newData));
+// }
+//
+//   function formatUnread(link){
+//     if (link.unread){
+//       console.log("link is now unread");
+//       return '<div id="unread-check">' +'<ul> Mark as Read: <input type="checkbox" class="checkbox-unread"></ul></div>';
+//   }
+//     else {
+//       console.log("link is now read");
+//     return '<div id="read-check">' + '<ul>Mark as Unread: <input type="checkbox" class="checkbox-read"></ul>';
+//   }
+//   }
