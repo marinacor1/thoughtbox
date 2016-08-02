@@ -23,12 +23,14 @@ function load(selector){
 
   function checkStatusStyle(link){
     if (link.unread) {
+      document.getElementById('link-subset').style.color = "orange";
       $(link).addClass('unread-style');
     }
   }
 
   function formatUnread(link){
     if (link.unread){
+      // $('#link-subset'+ link.id).addClass('unread-style');
     return '<div id="unread-check">' +'<ul' + link.id + '> Mark as Read: <input type="checkbox" class="checkbox-unread"></ul></div>';
   }
     else {
