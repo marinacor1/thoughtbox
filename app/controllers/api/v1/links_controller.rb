@@ -26,7 +26,6 @@ class Api::V1::LinksController < ApplicationController
 
   def sorted
     respond_with Link.order("lower(title)").all
-    # respond_with Link.all.order(:title)
   end
 
   private
