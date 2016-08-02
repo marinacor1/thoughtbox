@@ -14,7 +14,7 @@ function updateReadStatus(selector){
 function updateStatus (newData, currentId) {
   $.ajax({
     type: "PATCH",
-    url: "api/v1/links/" + currentId.id,
+    url: "/api/v1/links/" + currentId.id,
     data: newData,
     dataType: 'json',
     success: clearTable('#link-table')

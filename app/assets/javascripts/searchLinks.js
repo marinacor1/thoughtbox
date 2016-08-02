@@ -1,6 +1,6 @@
 function searchLinks(selector){
   $(selector).keyup(function(event){
-    var searchWords = event.key.toLowerCase();
+    var searchWords = $(this).find('input').val();
       if (searchWords == "backspace") {
         searchWords = $(this).val();
       }
@@ -8,12 +8,13 @@ function searchLinks(selector){
   });
 }
 
-function loadSelectWords(searchWords){
-  var $currentLinks = $('#link-table').children();
-  var notRightLinks = $currentLinks.each(function(index, individualLink){
+function loadSelectWords(searchWords, linkTable){
+  var lT = linkTable || '#link-table';
+  var $currentLinks = $(lT).children();
+  $currentLinks.each(function(index, individualLink) {
     var id = individualLink.firstChild.id.split("-")[2];
-    var linkTitleAndUrl  = $(individualLink).find('#title-box' + id + '').text().toLowerCase();
-  if (linkTitleAndUrl.includes(searchWords)){
+    var linkTitleAndUrl  = $(individualLink).find('#title-box-' + id + '').text().toLowerCase();
+    if (linkTitleAndUrl.includes(searchWords)){
       $(individualLink).removeClass('invisible');
     } else {
       $(individualLink).addClass('invisible');

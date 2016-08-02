@@ -18,7 +18,7 @@ function updateData(currentId){
   var newData = {title: newTitle, url: newUrl};
   $.ajax({
     type: "PATCH",
-    url: "api/v1/links/" + currentId,
+    url: "/api/v1/links/" + currentId,
     data: newData,
     dataType: 'json',
     success: function (response) {
@@ -33,18 +33,3 @@ function noReloadLink(currentId, response){
   $('#link-subset' + upperId + '').append(formatLink(response));
   console.log('response is ' + response);
 }
-
-  function formatLink(response){
-    return '<div id="link-subset>'+ response.id + '"'+'<ul id="title-box'+ response.id + '"'+'>' + response.title +
-    '</ul><ul id="url-box '+ response.id + '"'+'>' + response.url + '</ul>' + formatUnread(response) + '<button type="button" onclick="editLink()" class="edit-button">Edit</button>' +
-    '</div>';
-}
-
-  function formatUnread(response){
-    if (response.unread){
-    return '<div id="unread-check">' +'<ul' + response.id + '> Mark as Read: <input type="checkbox" class="checkbox-unread"></ul></div>';
-  }
-    else {
-    return '<div id="read-check">' + '<ul' + response.id + '>Mark as Unread: <input type="checkbox" class="checkbox-read"></ul>';
-  }
-  }
